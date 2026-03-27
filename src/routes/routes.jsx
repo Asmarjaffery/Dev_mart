@@ -1,19 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage  from "../pages/home/home";
+import HomePage from "../pages/home/home";
 import AboutPage from "../pages/About/about";
 import ContactPage from "../pages/Contact/contact_us";
 
 export const publicRoutes = createBrowserRouter([
     {
-        path:'/',
-        element:<HomePage></HomePage>
+        path: '/',
+        element: <HomePage />
     },
     {
-        path:'/',
-        element:<AboutPage></AboutPage>
+        path: '/about',
+        element: <AboutPage />
     },
     {
-        path:'/',
-        element:<ContactPage></ContactPage>
+        path: '/contact_us',
+        element: <ContactPage />
+    },
+    {
+        Path: '/signup',
+        element:<signup/>
     }
-])
+],
+{
+    basename: '/Dev_mart'  
+});
