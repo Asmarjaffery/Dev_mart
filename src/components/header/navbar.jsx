@@ -5,9 +5,16 @@ import Sidebar from '../sidebar/sidebar'
 import GlobalSearch from '../search-bar/global-search-bar'
 import ShoppingCart from '../cart/shopping-cart'
 import { sidebarContext } from '../../contexts/sidebar.context'
+import { useDispatch, useSelector } from 'react-redux'
+import { removeUser } from '../../redux/features/user-slice'
 
 export const Navbar = () => {
   const { is_sidebar, sidebarOpen } = useContext(sidebarContext)
+  const isLogin = useSelector(state=> state.user.isLogin);
+  const dispatch =useDispatch();
+  const signOut = () =>{
+    dispatch(removeUser())
+  }
 
   return (
     <>
@@ -30,9 +37,15 @@ export const Navbar = () => {
               <li className="nav-item mx-3">
                 <NavLink to='/about' className={`${styles.nav_link_item} nav-link active`}>About</NavLink>
               </li>
+              {
+                isLogin ?
+                <li className="nav-item mx-3">
+                <NavLink onClick={signOut} className={`${styles.nav_link_item} nav-link active`}>Sign Out</NavLink>
+              </li> :
               <li className="nav-item mx-3">
                 <NavLink to='/auth/signup' className={`${styles.nav_link_item} nav-link active`}>Sign Up</NavLink>
               </li>
+              }
             </ul>
             <form className="d-flex align-items-center-gap-5" role="search">
               <GlobalSearch></GlobalSearch>
