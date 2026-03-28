@@ -1,8 +1,19 @@
 import React from 'react'
+import PageLayout from '../../components/layouts/page-layout'
 
 export const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+
+    <div>
+      <PageLayout>
+        Contact
+      </PageLayout>
+    </div>
+
+
+
+
   )
 }
+
 export default ContactPage

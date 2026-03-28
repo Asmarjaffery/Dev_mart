@@ -1,14 +1,13 @@
 import React from 'react'
-import TopBar from '../../components/header/top-bar'
-import Navbar from '../../components/header/navbar'
+import PageLayout from '../../components/layouts/page-layout'
 
 export const HomePage = () => {
   return (
 
     <div>
-      <TopBar></TopBar>
-      <Navbar></Navbar>
-      home
+      <PageLayout>
+        Home
+      </PageLayout>
     </div>
 
 

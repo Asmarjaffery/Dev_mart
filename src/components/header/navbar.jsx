@@ -12,7 +12,6 @@ export const Navbar = () => {
   return (
     <>
       <Sidebar></Sidebar>
-
       <nav className={`navbar navbar-expand-lg bg-body-tertiary ${styles.app_navbar_container}`}>
         <div className="container">
           <a className="navbar-brand" href="#">Dev Mart</a>
