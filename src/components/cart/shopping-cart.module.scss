@@ -3,3 +3,46 @@
 .shopping_cart_icon {
     width: 25px;
 }
+
+.product_quantity_product {
+    width        : 150px;
+    height       : 40px;
+    border       : $containerBorder;
+    border-radius: 6px;
+
+
+    .counter_value {
+        font-size  : 22px;
+        font-weight: 500;
+    }
+
+    .update_counter_button {
+        background-color: $white;
+        display         : block;
+        width           : 40px;
+        height          : 100%;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        transition      : all 0.3s ease;
+
+        &:first-child {
+            border-top-left-radius   : 6px;
+            border-bottom-left-radius: 6px;
+            border-right             : $containerBorder;
+
+        }
+
+        &:last-child {
+            border-top-right-radius   : 6px;
+            border-bottom-right-radius: 6px;
+            border-left               : $containerBorder;
+        }
+
+        &:hover {
+            background-color: $primaryColor;
+            color           : $white;
+            cursor          : pointer;
+        }
+    }
+}

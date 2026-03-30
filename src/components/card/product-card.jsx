@@ -11,7 +11,7 @@ export const ProductCard = ({ data }) => {
     const isLogin = useSelector(state => state.user.isLogin)
     const navigate =useNavigate();
     return (
-        <div className={`${styles.product_card_container}`}>
+        <div className={`${styles.product_card_container}`} onClick={()=>navigate('/product-info')}>
             <div className={`${styles.card_img_container}`}>
                 <img src={data?.img[0]} alt={data?.name} />
             </div>
