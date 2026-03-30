@@ -1,0 +1,254 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "The North Coat",
+            "description": "A warm and stylish winter coat perfect for cold weather.",
+            "price": "192.00",
+            "stockQty": "10",
+            "img": ["https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400"],
+            "rating": "4.3",
+            "color": ["#ffffff", "#000000"]
+        },
+        {
+            "id": 2,
+            "name": "Gucci Duffle Bag",
+            "description": "Premium leather duffle bag for travel and style.",
+            "price": "960.00",
+            "stockQty": "5",
+            "img": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400"],
+            "rating": "4.7",
+            "color": ["#8B4513", "#000000"]
+        },
+        {
+            "id": 3,
+            "name": "RGB Liquid CPU Cooler",
+            "description": "High performance liquid cooling system with RGB lighting.",
+            "price": "160.00",
+            "stockQty": "15",
+            "img": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400"],
+            "rating": "4.5",
+            "color": ["#000000", "#ff0000"]
+        },
+        {
+            "id": 4,
+            "name": "Small BookShelf",
+            "description": "Compact wooden bookshelf for home and office use.",
+            "price": "360.00",
+            "stockQty": "8",
+            "img": ["https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400"],
+            "rating": "4.2",
+            "color": ["#8B4513", "#D2691E"]
+        },
+        {
+            "id": 5,
+            "name": "ASUS FHD Gaming Laptop",
+            "description": "Powerful gaming laptop with FHD display and fast processor.",
+            "price": "700.00",
+            "stockQty": "12",
+            "img": ["https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400"],
+            "rating": "4.8",
+            "color": ["#000000", "#808080"]
+        },
+        {
+            "id": 6,
+            "name": "IPS LCD Gaming Monitor",
+            "description": "27 inch IPS LCD monitor with 144Hz refresh rate.",
+            "price": "370.00",
+            "stockQty": "20",
+            "img": ["https://images.unsplash.com/photo-1527443224154-c4a573d5f5aa?w=400"],
+            "rating": "4.6",
+            "color": ["#000000"]
+        },
+        {
+            "id": 7,
+            "name": "HAVIT HV-G92 Gamepad",
+            "description": "Ergonomic gamepad with dual vibration motors.",
+            "price": "120.00",
+            "stockQty": "25",
+            "img": ["https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=400"],
+            "rating": "4.4",
+            "color": ["#000000", "#ff0000"]
+        },
+        {
+            "id": 8,
+            "name": "AK-900 Wired Keyboard",
+            "description": "Mechanical gaming keyboard with RGB backlight.",
+            "price": "200.00",
+            "stockQty": "18",
+            "img": ["https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400"],
+            "rating": "4.3",
+            "color": ["#000000", "#ffffff"]
+        },
+        {
+            "id": 9,
+            "name": "IPS LCD Gaming Monitor 24",
+            "description": "24 inch gaming monitor with ultra-thin bezels.",
+            "price": "650.00",
+            "stockQty": "7",
+            "img": ["https://images.unsplash.com/photo-1616763355548-1b606f439f86?w=400"],
+            "rating": "4.9",
+            "color": ["#000000", "#C0C0C0"]
+        },
+        {
+            "id": 10,
+            "name": "Wireless Bluetooth Headphones",
+            "description": "Over-ear headphones with noise cancellation and 30hr battery.",
+            "price": "250.00",
+            "stockQty": "30",
+            "img": ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"],
+            "rating": "4.6",
+            "color": ["#000000", "#ffffff", "#ff0000"]
+        },
+        {
+            "id": 11,
+            "name": "iPhone 14 Pro",
+            "description": "Latest Apple smartphone with 48MP camera and A16 chip.",
+            "price": "999.00",
+            "stockQty": "20",
+            "img": ["https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?w=400"],
+            "rating": "4.9",
+            "color": ["#6B3FA0", "#000000", "#ffffff", "#C0C0C0"]
+        },
+        {
+            "id": 12,
+            "name": "Samsung 4K Smart TV",
+            "description": "55 inch 4K UHD Smart TV with HDR and built-in Alexa.",
+            "price": "1200.00",
+            "stockQty": "6",
+            "img": ["https://images.unsplash.com/photo-1593359677879-a4bb92f829e1?w=400"],
+            "rating": "4.7",
+            "color": ["#000000"]
+        },
+        {
+            "id": 13,
+            "name": "Canon EOS DSLR Camera",
+            "description": "Professional DSLR camera with 24MP sensor and 4K video.",
+            "price": "1500.00",
+            "stockQty": "4",
+            "img": ["https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400"],
+            "rating": "4.8",
+            "color": ["#000000", "#808080"]
+        },
+        {
+            "id": 14,
+            "name": "Nike Air Max Sneakers",
+            "description": "Comfortable and stylish running shoes with air cushioning.",
+            "price": "150.00",
+            "stockQty": "50",
+            "img": ["https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"],
+            "rating": "4.5",
+            "color": ["#ff0000", "#000000", "#ffffff"]
+        },
+        {
+            "id": 15,
+            "name": "Apple Watch Series 8",
+            "description": "Smartwatch with health monitoring and GPS tracking.",
+            "price": "399.00",
+            "stockQty": "15",
+            "img": ["https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400"],
+            "rating": "4.7",
+            "color": ["#C0C0C0", "#000000", "#ff69b4"]
+        },
+        {
+            "id": 16,
+            "name": "Sony PlayStation 5",
+            "description": "Next-gen gaming console with 4K gaming and SSD storage.",
+            "price": "499.00",
+            "stockQty": "3",
+            "img": ["https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=400"],
+            "rating": "4.9",
+            "color": ["#ffffff", "#000000"]
+        },
+        {
+            "id": 17,
+            "name": "Leather Wallet",
+            "description": "Slim genuine leather wallet with RFID protection.",
+            "price": "45.00",
+            "stockQty": "100",
+            "img": ["https://images.unsplash.com/photo-1627123424574-724758594e93?w=400"],
+            "rating": "4.3",
+            "color": ["#8B4513", "#000000", "#D2691E"]
+        },
+        {
+            "id": 18,
+            "name": "Portable Bluetooth Speaker",
+            "description": "Waterproof speaker with 360 degree sound and 12hr battery.",
+            "price": "89.00",
+            "stockQty": "40",
+            "img": ["https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400"],
+            "rating": "4.4",
+            "color": ["#000000", "#ff0000", "#0000ff"]
+        },
+        {
+            "id": 19,
+            "name": "iPad Pro 12.9",
+            "description": "Powerful tablet with M2 chip and Liquid Retina display.",
+            "price": "1099.00",
+            "stockQty": "10",
+            "img": ["https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400"],
+            "rating": "4.8",
+            "color": ["#C0C0C0", "#808080", "#000000"]
+        },
+        {
+            "id": 20,
+            "name": "Coffee Maker Machine",
+            "description": "Automatic coffee maker with built-in grinder and milk frother.",
+            "price": "180.00",
+            "stockQty": "22",
+            "img": ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400"],
+            "rating": "4.5",
+            "color": ["#000000", "#C0C0C0"]
+        },
+        {
+            "id": 21,
+            "name": "Running Sunglasses",
+            "description": "UV400 protection sports sunglasses with polarized lenses.",
+            "price": "60.00",
+            "stockQty": "35",
+            "img": ["https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400"],
+            "rating": "4.2",
+            "color": ["#000000", "#8B0000", "#00008B"]
+        },
+        {
+            "id": 22,
+            "name": "Mechanical Gaming Mouse",
+            "description": "High precision gaming mouse with 16000 DPI and RGB lighting.",
+            "price": "75.00",
+            "stockQty": "45",
+            "img": ["https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400"],
+            "rating": "4.6",
+            "color": ["#000000", "#ff0000"]
+        },
+        {
+            "id": 23,
+            "name": "Yoga Mat",
+            "description": "Non-slip eco-friendly yoga mat with carrying strap.",
+            "price": "35.00",
+            "stockQty": "60",
+            "img": ["https://images.unsplash.com/photo-1601925228008-8b27430c7f07?w=400"],
+            "rating": "4.4",
+            "color": ["#800080", "#00CED1", "#ff69b4"]
+        },
+        {
+            "id": 24,
+            "name": "Stainless Steel Water Bottle",
+            "description": "Insulated water bottle keeps drinks cold 24hrs, hot 12hrs.",
+            "price": "28.00",
+            "stockQty": "80",
+            "img": ["https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400"],
+            "rating": "4.5",
+            "color": ["#C0C0C0", "#000000", "#ff0000", "#0000ff"]
+        },
+        {
+            "id": 25,
+            "name": "Wooden Study Desk",
+            "description": "Spacious wooden desk with storage drawers for home office.",
+            "price": "450.00",
+            "stockQty": "9",
+            "img": ["https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400"],
+            "rating": "4.6",
+            "color": ["#8B4513", "#D2691E", "#ffffff"]
+        }
+    ]
+}
