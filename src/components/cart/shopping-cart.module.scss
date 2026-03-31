@@ -46,3 +46,17 @@
         }
     }
 }
+
+.product_quantity_product_small {
+    width : 100px;
+    height: 30px;
+
+    .counter_value {
+        font-size: 16px;
+    }
+
+    .update_counter_button {
+        width: 30px;
+    }
+
+}

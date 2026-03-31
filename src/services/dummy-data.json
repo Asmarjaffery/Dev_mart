@@ -57,6 +57,17 @@
         },
         {
             "id": 6,
+            "name": "Anker 737 Power Bank",
+            "category": "Phones",
+            "description": "Anker's powerhouse 24,000mAh portable charger with 140W total output capable of charging a MacBook Pro at full speed. Smart digital display shows wattage, voltage, and remaining battery percentage for complete charge management. Supports simultaneous charging of three devices at once with intelligent power distribution. Compact and travel-friendly design with airline-approved capacity makes it perfect for long trips.",
+            "price": "149.00",
+            "stockQty": "50",
+            "img": ["https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400"],
+            "rating": "4.6",
+            "color": ["#000000", "#808080"]
+        },
+        {
+            "id": 7,
             "name": "ASUS ROG Gaming Laptop",
             "category": "Computers",
             "description": "A high-performance gaming laptop equipped with Intel Core i9 processor and NVIDIA RTX 4070 dedicated graphics card. The 15.6-inch Full HD IPS display with 240Hz refresh rate delivers ultra-smooth and tear-free gameplay at all times. Comes with 32GB DDR5 RAM and a 1TB NVMe SSD for lightning-fast load times and massive game storage capacity. Advanced ROG thermal management with dual fans and liquid metal compound ensures cool operation under extreme workloads.",
@@ -67,7 +78,7 @@
             "color": ["#000000", "#808080"]
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "MacBook Pro 14-inch M3",
             "category": "Computers",
             "description": "Apple's most powerful laptop featuring the groundbreaking M3 Pro chip with a 12-core CPU and 18-core GPU. The stunning 14.2-inch Liquid Retina XDR display offers ProMotion 120Hz and extreme brightness perfect for HDR content. Up to 22 hours of battery life means you can work the entire day without ever reaching for a charger. Equipped with MagSafe 3, Thunderbolt 4 ports, and an HDMI port for versatile professional connectivity.",
@@ -78,7 +89,7 @@
             "color": ["#C0C0C0", "#808080", "#000000"]
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Dell XPS 15 Laptop",
             "category": "Computers",
             "description": "A premium ultrabook with a stunning 15.6-inch OLED 3.5K touch display that brings every pixel vividly to life. Powered by Intel Core i9 13th Gen processor paired with NVIDIA GeForce RTX 4070 for creative and gaming workloads. The sleek CNC machined aluminum chassis houses an 86Wh battery for all-day productivity while traveling or working remotely. Featuring Thunderbolt 4, USB-C, and a full-size SD card reader for maximum professional connectivity.",
@@ -89,7 +100,7 @@
             "color": ["#C0C0C0", "#000000"]
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "iPad Pro 12.9 M2",
             "category": "Computers",
             "description": "Apple's most powerful tablet featuring the M2 chip that delivers desktop-class performance in an incredibly thin design. The 12.9-inch Liquid Retina XDR display with ProMotion 120Hz and 1600 nits peak brightness is breathtakingly beautiful. Supports Apple Pencil 2nd Gen and Magic Keyboard, transforming it into a full laptop replacement for creative professionals. With 5G connectivity and all-day battery life, this is the ultimate portable workstation for creatives and students alike.",
@@ -100,7 +111,29 @@
             "color": ["#C0C0C0", "#808080", "#000000"]
         },
         {
-            "id": 10,
+            "id": 11,
+            "name": "Logitech MX Master 3S",
+            "category": "Computers",
+            "description": "Logitech's most advanced wireless mouse with ultra-fast MagSpeed electromagnetic scrolling that is both precise and near-silent. The 8K DPI sensor works flawlessly on any surface including glass for laser-precise tracking in every workflow. Connect to up to three devices simultaneously and switch between them instantly with the Easy-Switch button. Ergonomic sculpted design with customizable buttons reduces hand fatigue during long work sessions.",
+            "price": "99.00",
+            "stockQty": "35",
+            "img": ["https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400"],
+            "rating": "4.8",
+            "color": ["#000000", "#808080", "#ffffff"]
+        },
+        {
+            "id": 12,
+            "name": "Samsung 65\" Neo QLED 4K TV",
+            "category": "Computers",
+            "description": "Samsung's flagship 65-inch Neo QLED 4K TV powered by Quantum Mini LEDs for extreme brightness and contrast in any room. The Neural Quantum Processor 4K upscales all content to near-4K quality using advanced AI scene detection and enhancement. Dolby Atmos and Object Tracking Sound+ create a fully immersive 3D audio experience that matches the on-screen action. Gaming Hub with 144Hz and FreeSync Premium Pro support makes it the ultimate display for next-gen gaming consoles.",
+            "price": "1799.00",
+            "stockQty": "7",
+            "img": ["https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400"],
+            "rating": "4.7",
+            "color": ["#000000"]
+        },
+        {
+            "id": 13,
             "name": "Apple Watch Series 9",
             "category": "Smart Watch",
             "description": "The most advanced Apple Watch ever with the new S9 SiP chip for faster on-device performance and Siri processing. Tracks your health 24/7 with blood oxygen, ECG, heart rate, and skin temperature sensors all built right in. The always-on Retina display is 2x brighter outdoors so you can read it clearly even in direct sunlight. Water resistant up to 50 meters with GPS and optional cellular connectivity to stay connected anywhere you go.",
@@ -111,7 +144,7 @@
             "color": ["#C0C0C0", "#000000", "#ff69b4"]
         },
         {
-            "id": 11,
+            "id": 14,
             "name": "Samsung Galaxy Watch 6",
             "category": "Smart Watch",
             "description": "Samsung's premium smartwatch with advanced health monitoring including body composition analysis and skin temperature tracking. The 1.5-inch Super AMOLED display with sapphire crystal glass protection is both vibrant and highly scratch-resistant. AI-powered sleep coaching gives you personalized insights and actionable tips to improve your nightly rest and recovery. Compatible with Android and offers up to 40 hours of battery life with the power saving mode fully enabled.",
@@ -122,7 +155,7 @@
             "color": ["#000000", "#C0C0C0", "#D4AF37"]
         },
         {
-            "id": 12,
+            "id": 15,
             "name": "Garmin Forerunner 965",
             "category": "Smart Watch",
             "description": "A top-tier GPS running smartwatch with a vivid AMOLED display built for serious athletes and outdoor adventurers. Provides advanced training metrics including VO2 max, training load, and recovery time advisor for peak performance optimization. Multi-band GPS ensures pinpoint location accuracy across all terrains and challenging environments worldwide. With up to 31 days in smartwatch mode and 31 hours in GPS mode, it outlasts even the longest ultramarathon.",
@@ -133,7 +166,7 @@
             "color": ["#000000", "#808080", "#0000ff"]
         },
         {
-            "id": 13,
+            "id": 16,
             "name": "Fitbit Sense 2",
             "category": "Smart Watch",
             "description": "A comprehensive health smartwatch with a continuous EDA sensor for real-time stress management and mindfulness tracking. Built-in GPS, heart rate, SpO2, skin temperature, and ECG app give you a complete picture of your daily wellness. The 6-day battery life keeps you tracking without interruption through workouts, sleep, and everything in between. Compatible with both Android and iOS, it syncs automatically with the Fitbit app for detailed health insights and trends.",
@@ -144,7 +177,7 @@
             "color": ["#000000", "#C0C0C0", "#4682B4"]
         },
         {
-            "id": 14,
+            "id": 17,
             "name": "Canon EOS R6 Mark II",
             "category": "Camera",
             "description": "A professional mirrorless camera with a 24.2MP full-frame CMOS sensor for incredible image quality in any lighting. Blazing 40fps continuous shooting with Dual Pixel CMOS AF II subject tracking keeps every fast-moving shot razor-sharp. Records uncropped 4K 60fps video with 10-bit Canon Log 3 for true cinema-quality footage directly out of the box. In-body image stabilization up to 8 stops lets you shoot handheld successfully in even the most challenging low-light conditions.",
@@ -155,7 +188,7 @@
             "color": ["#000000", "#808080"]
         },
         {
-            "id": 15,
+            "id": 18,
             "name": "Sony Alpha A7 IV",
             "category": "Camera",
             "description": "Sony's versatile full-frame mirrorless hybrid featuring a back-illuminated 33MP Exmor R CMOS sensor for ultimate detail. Advanced real-time autofocus with AI-based subject recognition tracks humans, animals, and vehicles with incredible accuracy and speed. Shoots 4K 60fps video with 10-bit 4:2:2 internal recording for truly stunning and cinematic results in every scene. The large 3-inch tilting touchscreen and improved ergonomics make it exceptionally comfortable for extended shooting sessions.",
@@ -166,7 +199,7 @@
             "color": ["#000000", "#808080"]
         },
         {
-            "id": 16,
+            "id": 19,
             "name": "GoPro Hero 12 Black",
             "category": "Camera",
             "description": "The ultimate action camera built for adventure, featuring stunning 5.3K60 and 4K120 video recording capabilities. HyperSmooth 6.0 delivers the best-ever built-in video stabilization so your footage stays silky smooth no matter the terrain. Waterproof to 10 meters without any housing, making it perfect for surfing, swimming, and shooting in rainy conditions. Connects seamlessly to the GoPro Quik app for instant content editing, sharing, and cloud backup on the go.",
@@ -177,9 +210,20 @@
             "color": ["#000000"]
         },
         {
-            "id": 17,
+            "id": 20,
+            "name": "Fujifilm X-T5",
+            "category": "Camera",
+            "description": "A compact and lightweight mirrorless camera featuring a 40.2MP X-Trans CMOS 5 HR sensor for exceptional resolution and detail. The fifth-generation X-Processor 5 delivers blazing fast autofocus and subject tracking across all shooting scenarios. Iconic retro-style dials for shutter speed, ISO, and exposure compensation make manual shooting intuitive and enjoyable. Offers 6.5-stop in-body image stabilization and 20fps mechanical shutter shooting for wildlife and sports photography.",
+            "price": "1699.00",
+            "stockQty": "9",
+            "img": ["https://images.unsplash.com/photo-1621520291095-aa6c7137491a?w=400"],
+            "rating": "4.8",
+            "color": ["#C0C0C0", "#000000"]
+        },
+        {
+            "id": 21,
             "name": "Sony WH-1000XM5",
-            "category": "HeadPhones",
+            "category": "Headphones",
             "description": "Industry-leading wireless noise cancelling headphones featuring eight microphones and two processors for the best ANC ever made. Crystal clear hands-free calling is powered by an integrated V1 chip and precise voice pickup beamforming microphone technology. Up to 30 hours battery life with quick charge giving 3 full hours of playback from just a 3-minute charge session. Premium 30mm drivers are carefully tuned for an incredibly natural and detailed sound signature across every music genre.",
             "price": "349.00",
             "stockQty": "30",
@@ -188,9 +232,9 @@
             "color": ["#000000", "#C0C0C0"]
         },
         {
-            "id": 18,
+            "id": 22,
             "name": "Apple AirPods Pro 2nd Gen",
-            "category": "HeadPhones",
+            "category": "Headphones",
             "description": "Apple's most advanced earbuds featuring the H2 chip delivering up to 2x more active noise cancellation than before. Adaptive Transparency mode intelligently lets in ambient sound while simultaneously reducing harsh environmental noise in real time. Personalized Spatial Audio with dynamic head tracking places sound all around you for a truly immersive listening experience. The MagSafe charging case provides over 30 hours of total listening time and conveniently charges via Apple Watch charger.",
             "price": "249.00",
             "stockQty": "40",
@@ -199,9 +243,9 @@
             "color": ["#ffffff"]
         },
         {
-            "id": 19,
+            "id": 23,
             "name": "JBL Quantum 910 Wireless",
-            "category": "HeadPhones",
+            "category": "Headphones",
             "description": "Premium wireless gaming headset with active noise cancellation and JBL QuantumSURROUND 3D positional audio technology. The powerful 40mm drivers deliver deep punchy bass and crisp highs for a competitive audio advantage in every game session. Detachable boom microphone with Discord-certified voice clarity ensures your teammates always hear you loud and clear. Compatible with PC, PS5, Xbox, Nintendo Switch, and mobile devices for true cross-platform gaming versatility.",
             "price": "199.00",
             "stockQty": "22",
@@ -210,9 +254,9 @@
             "color": ["#000000", "#0000ff"]
         },
         {
-            "id": 20,
+            "id": 24,
             "name": "Bose QuietComfort 45",
-            "category": "HeadPhones",
+            "category": "Headphones",
             "description": "Bose's legendary noise cancelling headphones delivering quiet, comfort, and acclaimed audio quality in one premium package. TriPort acoustic architecture and Active EQ reproduce full and natural sound at any volume without distortion or fatigue. Quiet Mode blocks the world out completely while Aware Mode lets you tune into your surroundings with just one press. A 24-hour battery life with 15-minute quick charge ensures you are never left without your music during a long day.",
             "price": "279.00",
             "stockQty": "28",
@@ -221,7 +265,7 @@
             "color": ["#000000", "#ffffff", "#4682B4"]
         },
         {
-            "id": 21,
+            "id": 25,
             "name": "Sony PlayStation 5",
             "category": "Gaming",
             "description": "Sony's next-generation gaming console powered by a custom AMD Zen 2 CPU and RDNA 2 GPU for true 4K gaming at 60fps. The revolutionary DualSense controller features haptic feedback and adaptive triggers that bring game worlds to life in your hands. The ultra-high speed custom 825GB SSD eliminates virtually all load times, getting you into the action faster than ever before. Backward compatible with the vast majority of PS4 titles, giving you thousands of games to play right from day one.",
@@ -232,7 +276,7 @@
             "color": ["#ffffff", "#000000"]
         },
         {
-            "id": 22,
+            "id": 26,
             "name": "Xbox Series X",
             "category": "Gaming",
             "description": "Microsoft's most powerful Xbox ever, delivering 12 teraflops of GPU performance for true 4K gaming at up to 120fps. Quick Resume lets you switch between multiple games almost instantly, picking up exactly where you left off without any reload. The custom 1TB NVMe SSD enables near-instantaneous load times and seamless open-world texture streaming for vast game environments. Xbox Game Pass Ultimate gives you access to over 100 high-quality titles on day one for one affordable monthly subscription price.",
@@ -243,7 +287,7 @@
             "color": ["#000000", "#006400"]
         },
         {
-            "id": 23,
+            "id": 27,
             "name": "HAVIT HV-G92 Gamepad",
             "category": "Gaming",
             "description": "Ergonomic wired gaming gamepad designed for extended gaming sessions with a comfortable textured non-slip grip design. Features dual vibration motors that deliver immersive force feedback perfectly synchronized with in-game events and explosions. Equipped with precision analog sticks, a responsive 8-direction D-pad, and 10 programmable action buttons for any playstyle. Plug-and-play USB connectivity ensures instant compatibility with PC, PS3, and Android devices with zero driver installation needed.",
@@ -254,7 +298,7 @@
             "color": ["#000000", "#ff0000"]
         },
         {
-            "id": 24,
+            "id": 28,
             "name": "IPS LCD Gaming Monitor 27\"",
             "category": "Gaming",
             "description": "A stunning 27-inch IPS LCD monitor with a blazing 144Hz refresh rate and 1ms response time built for competitive gaming. QHD 2560x1440 resolution delivers sharp and richly detailed visuals that make every game look absolutely breathtaking. AMD FreeSync Premium technology eliminates screen tearing and micro-stuttering for a perfectly smooth gaming experience. Ergonomic stand with full tilt, swivel, pivot, and height adjustment lets you find your perfect comfortable viewing position.",
@@ -265,7 +309,7 @@
             "color": ["#000000"]
         },
         {
-            "id": 25,
+            "id": 29,
             "name": "AK-900 Mechanical Keyboard",
             "category": "Gaming",
             "description": "A premium full-size mechanical gaming keyboard with tactile blue switches engineered for fast and satisfying keystrokes. Per-key RGB backlighting with 16.8 million colors and 18 dynamic lighting effects lets you fully customize your entire gaming setup. N-key rollover and full anti-ghosting technology ensure every simultaneous keypress is registered with absolute 100% accuracy. Durable aluminum top plate and double-shot PBT keycaps guarantee years of heavy daily use without any fading or wear.",

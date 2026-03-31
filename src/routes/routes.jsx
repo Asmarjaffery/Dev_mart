@@ -1,42 +1,80 @@
 import { createBrowserRouter } from "react-router-dom";
-import SignupPage from "../pages/auth/signup";
-import LoginPage from "../pages/auth/login";
-import AboutPage from "../pages/about/about";
-import ContactPage from "../pages/contact/contact_us";
-import HomePage from "../pages/home/home";
-import ProductPage from "../pages/products/products";
-import ProductInfoPage from "../pages/products_info/product-info";
+import { lazy, Suspense } from "react";
+import LoaderPage from "../components/loader/loader"  
+const HomePage = lazy(() => import("../pages/home/home"))
+const AboutPage = lazy(() => import("../pages/about/about"))
+const ContactPage = lazy(() => import("../pages/contact/contact_us"))
+const SignUpPage = lazy(() => import("../pages/auth/signup"))
+const LoginPage = lazy(() => import("../pages/auth/login"))
+const ProductsPage = lazy(() => import("../pages/products/products"))
+const ProductInfoPage = lazy(() => import("../pages/products_info/product-info"))
+const Checkout = lazy(() => import("../pages/checkout/checkout"))
+
+
 
 export const publicRoutes = createBrowserRouter([
     {
         path: '/',
-        element: <HomePage></HomePage>
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><HomePage /></Suspense>
     },
     {
         path: '/about',
-        element: <AboutPage></AboutPage>
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><AboutPage /></Suspense>
     },
     {
         path: '/contact_us',
-        element: <ContactPage></ContactPage>
-    }, 
-    {
-         path: '/products',
-         element:<ProductPage></ProductPage>
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><ContactPage /></Suspense>
     },
     {
-         path: '/product-info',
-         element:<ProductInfoPage></ProductInfoPage>
+        path: '/products',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><ProductsPage /></Suspense>
+    },
+    {
+        path: '/product-info',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><ProductInfoPage /></Suspense>
     },
     {
         path: '/auth/signup',
-        element: <SignupPage></SignupPage>
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><SignUpPage /></Suspense>
     },
     {
         path: '/auth/login',
-        element: <LoginPage></LoginPage>
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><LoginPage /></Suspense>
+    },
+    {
+        path: '*',
+        element: <h1>404 Not Found</h1>
+    }
+], { basename: '/Dev_mart' })
+
+export const privateRoutes = createBrowserRouter([
+    {
+        path: '/',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><HomePage /></Suspense>
+    },
+    {
+        path: '/about',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><AboutPage /></Suspense>
+    },
+    {
+        path: '/contact_us',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><ContactPage /></Suspense>
+    },
+    {
+        path: '/products',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><ProductsPage /></Suspense>
+    },
+    {
+        path: '/product-info',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><ProductInfoPage /></Suspense>
+    },
+    {
+        path: '/checkout',
+        element: <Suspense fallback={<LoaderPage></LoaderPage>}><Checkout /></Suspense>
+    },
+    {
+        path: '*',
+        element: <h1>404 Not Found</h1>
     }
 ],
-    {
-        basename: '/Dev_mart'
-    });
+    { basename: '/Dev_mart' })
