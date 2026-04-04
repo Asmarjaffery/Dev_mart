@@ -6,8 +6,6 @@ import BestProductSlider from '../../components/sliders/best-product-slider'
 import { SingleProduct } from '../../services/single-data'
 import 'swiper/css/pagination';
 import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import { Rating } from 'react-simple-star-rating'
 import ProductColorVaraints from './product-color'
 import PrimaryButton from '../../components/button/primary'
@@ -15,7 +13,7 @@ import ProductQuantityCounter from '../../components/cart/product-quantity-count
 import deliveryIcon from '../../assets/icons/icon-delivery.svg'
 import returnIcon from '../../assets/icons/icon-return.svg'
 import productShippingCard, { ProductShippingCard } from './product_shipping_card'
-import ProductImagesSlider from '../../components/sliders/product_images_slider'
+import ProductImagesSlider from '../../components/sliders/product-images-slider'
 
 export const ProductInfoPage = () => {
   const swiperRef = useRef(null)

@@ -1,11 +1,5 @@
 import React, { useRef } from 'react';
 import styles from './slider.module.scss'
-import c1 from "../../assets/images/c1.png";
-import c2 from "../../assets/images/c2.png";
-import c3 from "../../assets/images/c3.png";
-import c4 from "../../assets/images/c4.png";
-import c5 from "../../assets/images/c5.png";
-import c6 from "../../assets/images/c6.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

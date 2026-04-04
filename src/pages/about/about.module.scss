@@ -1,0 +1,176 @@
+@import "../../theme.scss";
+
+// ============================================
+// SECTION 1: BREADCRUMB
+// ============================================
+
+.breadcrumb_nav {
+    margin-top: 16px;
+}
+
+.breadcrumb_list {
+    display    : flex;
+    align-items: center;
+    gap        : 4px;
+    list-style : none;
+    padding    : 0;
+    margin     : 0;
+}
+
+.breadcrumb_item {
+    font-size: 14px;
+    color    : $darkGray;
+
+    a {
+        color          : $darkGray;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &::after {
+        content    : '/';
+        margin-left: 4px;
+        color      : $darkGray;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.breadcrumb_active {
+    font-size  : 14px;
+    font-weight: 500;
+    color      : $dark;
+}
+
+
+// ============================================
+// SECTION 2: OUR STORY
+// ============================================
+
+.story_section {
+    margin-top: 0;
+}
+
+.story_text {
+    padding    : 48px 48px 48px 80px;
+    display    : flex;
+    align-items: center;
+    min-height : 420px;
+
+    @media (max-width: 1200px) {
+        padding: 48px 32px 48px 48px;
+    }
+
+    @media (max-width: 992px) {
+        padding   : 40px 24px;
+        min-height: auto;
+    }
+
+    @media (max-width: 768px) {
+        padding: 32px 16px;
+    }
+}
+
+.story_desc {
+    font-size    : 14px;
+    line-height  : 1.8;
+    color        : $darkGray;
+    margin-bottom: 16px;
+    max-width    : 460px;
+
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
+}
+
+.story_image {
+    width          : 100%;
+    display        : block;
+    height         : 450px;
+    object-fit     : cover;
+    object-position: center top;
+
+    @media (max-width: 992px) {
+        height: 400px;
+    }
+
+    @media (max-width: 768px) {
+        height: 300px;
+    }
+}
+
+
+// ============================================
+// SECTION 3: ACHIEVEMENT CARDS
+// ============================================
+
+.stat_card {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    border         : 1px solid $lightGray;
+    border-radius  : 4px;
+    padding        : 30px 20px;
+    text-align     : center;
+    cursor         : pointer;
+    transition     : all 0.3s ease;
+}
+
+.stat_card_active {
+    background: $primaryColor;
+}
+
+.stat_card_figure {
+    width          : 56px;
+    height         : 56px;
+    border-radius  : 50%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 15px;
+    background     : $dark;
+    box-shadow     : 0 0 0 14px $lightGray;
+
+    >img {
+        width : 28px;
+        height: 28px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.stat_card_active .stat_card_figure {
+    background: $white;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+
+    >img {
+        filter: brightness(0) invert(0);
+    }
+}
+
+.stat_card_title {
+    font-size  : 32px;
+    font-weight: 700;
+    margin     : 0 0 8px;
+    color      : $dark;
+}
+
+.stat_card_active .stat_card_title {
+    color: $white;
+}
+
+.stat_card_desc {
+    font-size  : 14px;
+    font-weight: 400;
+    color      : $darkGray;
+    margin     : 0;
+}
+
+.stat_card_active .stat_card_desc {
+    color: $white;
+}
