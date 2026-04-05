@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import LoaderPage from "../components/loader/loader"  
+import LoaderPage from "../components/loader/loader"
 const HomePage = lazy(() => import("../pages/home/home"))
 const AboutPage = lazy(() => import("../pages/about/about"))
 const ContactPage = lazy(() => import("../pages/contact/contact_us"))
@@ -9,8 +9,7 @@ const LoginPage = lazy(() => import("../pages/auth/login"))
 const ProductsPage = lazy(() => import("../pages/products/products"))
 const ProductInfoPage = lazy(() => import("../pages/products_info/product-info"))
 const Checkout = lazy(() => import("../pages/checkout/checkout"))
-
-
+const ErrorPage = lazy(() => import("../pages/error/error"))
 
 export const publicRoutes = createBrowserRouter([
     {
@@ -43,7 +42,7 @@ export const publicRoutes = createBrowserRouter([
     },
     {
         path: '*',
-        element: <h1>404 Not Found</h1>
+        element: <Suspense fallback={<LoaderPage />}><ErrorPage /></Suspense>
     }
 ], { basename: '/Dev_mart' })
 
@@ -74,7 +73,7 @@ export const privateRoutes = createBrowserRouter([
     },
     {
         path: '*',
-        element: <h1>404 Not Found</h1>
+        element: <Suspense fallback={<LoaderPage />}><ErrorPage /></Suspense>
     }
 ],
     { basename: '/Dev_mart' })
