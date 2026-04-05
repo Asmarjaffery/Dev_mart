@@ -3,34 +3,41 @@ import PageLayout from '../../components/layouts/page-layout'
 import CartProduct from './cart-product'
 import CheckoutSummary from './checkout-summary'
 import styles from './checkout.module.scss'
+import useShoppingCart from '../../hooks/use-shopping-cart'
 
 export const CheckOutPage = () => {
-    return (
-        <>
-            <PageLayout>
-                <div>
-                    <table className="table table-borderless my-5 container">
-                        <thead>
-                            <tr className='mb-5'>
-                                <td scope="col">Product</td>
-                                <td scope="col">Price</td>
-                                <td scope="col">Quantity</td>
-                                <td scope="col">Subtotal</td>
-                            </tr>
-                        </thead>
+    const { getCartProducts } = useShoppingCart();
+    const cart_product = getCartProducts();
 
-                        <tbody>
-                            <CartProduct></CartProduct>
-                            <CartProduct></CartProduct>
-                        </tbody>                    </table>
-                    <div className="d-flex justify-content-end justify-content-lg-end mb-5 pe-5">
-                        <CheckoutSummary></CheckoutSummary>
+    return (
+        <PageLayout>
+            <div className='container my-4 my-lg-5'>
+
+                {/* Table Header */}
+                <div className={`row d-none d-md-flex ${styles.table_header}`}>
+                    <div className="col-md-5">Product</div>
+                    <div className="col-md-2">Price</div>
+                    <div className="col-md-3">Quantity</div>
+                    <div className="col-md-2">Subtotal</div>
+                </div>
+
+                {/* Product Rows */}
+                {cart_product && cart_product.length > 0 &&
+                    cart_product.map(item => (
+                        <CartProduct key={item.product_id} data={item} />
+                    ))
+                }
+
+                {/* Checkout Summary */}
+                <div className="d-flex justify-content-center justify-content-md-end mb-5 mt-4">
+                    <div className={styles.summary_wrapper}>
+                        <CheckoutSummary />
                     </div>
                 </div>
 
-            </PageLayout>
-        </>
-    )
-}
+            </div>
+        </PageLayout>
+    );
+};
 
-export default CheckOutPage
+export default CheckOutPage;

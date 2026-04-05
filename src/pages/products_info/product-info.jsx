@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from "./product_info.module.scss"
 import PageLayout from '../../components/layouts/page-layout'
 import SectionHeading from '../../components/section-headings/section-heading'
@@ -14,11 +14,42 @@ import deliveryIcon from '../../assets/icons/icon-delivery.svg'
 import returnIcon from '../../assets/icons/icon-return.svg'
 import productShippingCard, { ProductShippingCard } from './product_shipping_card'
 import ProductImagesSlider from '../../components/sliders/product-images-slider'
+import useShoppingCart from '../../hooks/use-shopping-cart'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router'
+import { Helpers } from '../../services/helpers'
 
 export const ProductInfoPage = () => {
   const swiperRef = useRef(null)
+  const isLogin = useSelector(state => state.user.isLogin)
+  const navigate = useNavigate();
+  const [quantity, setQuantity] = useState(0);
   const [activeColor, setActiveColor] = useState(SingleProduct.color?.[0] ?? null);
+  const {
+    addToCart,
+    decreaseProductQuantityInCart,
+    removeFromCart,
+    getCartProductQuantity,
+    getCartSingleProducts,
+    getCartCount,
+    clearCart
+  } = useShoppingCart();
 
+
+  useEffect(() => {
+    if (!SingleProduct) return;
+    const q = getCartProductQuantity(SingleProduct.id);
+    console.log(q);
+    setQuantity(q ?? 0);
+  }, [getCartProductQuantity, addToCart, decreaseProductQuantityInCart]);
+
+  function addProductIntoCart() {
+    if (!isLogin) {
+      navigate("/auth/signup");
+      return;
+    };
+    addToCart(SingleProduct);
+  }
   return (
     <PageLayout>
       <section className={`container my-5 py-5`}>
@@ -45,7 +76,7 @@ export const ProductInfoPage = () => {
               </div>
 
               {/* Price */}
-              <p className={styles.product_price}>${SingleProduct.price}</p>
+              <p className={styles.product_price}>{Helpers.priceFormatter(SingleProduct.price)}</p>
 
               {/* Description */}
               <p className={styles.product_desc}>{SingleProduct.description}</p>
@@ -58,8 +89,18 @@ export const ProductInfoPage = () => {
 
               {/* Product Quantity Counter */}
               <div className={`${styles.product_buy_container} d-flex gap-2 align-items-center my-5`}>
-                <div><ProductQuantityCounter /></div>
-                <div><PrimaryButton onClick={() => null}>Buy Now</PrimaryButton></div>
+
+                {quantity > 0 ? (
+                  <div><ProductQuantityCounter qty={quantity} onIncreament={() => addToCart(SingleProduct)} onDecrement={() => decreaseProductQuantityInCart(SingleProduct)} /></div>
+                ) : (
+                  <div>
+                    <PrimaryButton onClick={addProductIntoCart}>Add to Cart</PrimaryButton>
+                  </div>
+                )}
+                <div>
+                  <PrimaryButton onClick={() => null}>Buy Now</PrimaryButton>
+                </div>
+
               </div>
 
               {/* Product Shipping */}
@@ -80,5 +121,6 @@ export const ProductInfoPage = () => {
     </PageLayout>
   )
 }
+
 
 export default ProductInfoPage

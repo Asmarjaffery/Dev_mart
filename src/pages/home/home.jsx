@@ -18,9 +18,6 @@ import returnIcon from '../../assets/icons/customer_services.svg'
 import deliveryIcon from '../../assets/icons/delivery-fast.svg'
 import CheckIcon from '../../assets/icons/checkmark.svg'
 
-
-
-
 const bannerImages = [banner1, banner2, banner3]
 export const HomePage = () => {
     const navigate = useNavigate();

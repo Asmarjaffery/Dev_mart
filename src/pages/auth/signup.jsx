@@ -25,13 +25,13 @@ export const SignupPage = () => {
     let emailError = "";
     let passwordError = "";
 
-    if (!Helpers.ValiditeEmail(email)) {
+    if (!Helpers.ValidateEmail(email)) {
       emailError = "Invalid Email"
     }
-    if (!Helpers.ValiditePassword(password)) {
+    if (!Helpers.ValidatePassword(password)) {
       passwordError = "password must be atleast 8 characters"
     }
-    if (!Helpers.ValiditeName(name)) {
+    if (!Helpers.ValidateName(name)) {
       nameError = "name must be atleast 3 characters"
     } if (emailError || passwordError || nameError) {
       setErrors({ email: emailError, password: passwordError, name: nameError })

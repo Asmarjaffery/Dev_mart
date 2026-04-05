@@ -24,10 +24,10 @@ export const LoginPage = () => {
     let emailError = "";
     let passwordError = "";
 
-    if (!Helpers.ValiditeEmail(email)) {
+    if (!Helpers.ValidateEmail(email)) {
       emailError = "Invalid Email"
     }
-    if (!Helpers.ValiditePassword(password)) {
+    if (!Helpers.ValidatePassword(password)) {
       passwordError = "password must be atleast 8 characters"
     }
 
@@ -77,7 +77,7 @@ export const LoginPage = () => {
           <small>
             <Link className={styles.forget_password_link} to='/auth/login'>Forget Password</Link>
           </small>
-            {authError && <div className='text-left text-danger mt-1'><small>{authError}</small></div>}
+          {authError && <div className='text-left text-danger mt-1'><small>{authError}</small></div>}
           <div className={styles.button_wrapper}>
             <PrimaryButton loading={loader} disabled={loader} onClick={onSubmitLogin}>
               Log In
