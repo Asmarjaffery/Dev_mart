@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 import { IoSendSharp } from 'react-icons/io5'
 import ScrollToTopButton from '../button/ScrollToTopButton'
 import styles from './footer.module.scss'
+import Chatbot from '../chatbot/chatbot'
 
 const Footer = () => {
     const [email, setEmail] = useState('')
@@ -16,6 +17,7 @@ const Footer = () => {
 
     return (
         <>
+            <Chatbot />
             <ScrollToTopButton />
             <footer className={styles.footer_container}>
                 <div className="container">
