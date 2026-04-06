@@ -12,7 +12,7 @@ import BestProductSlider from '../../components/sliders/best-product-slider';
 import dummyData from '../../services/dummy-data.json'
 import PrimaryButton from '../../components/button/primary';
 import { useNavigate } from 'react-router';
-import featureimg from '../../assets/images/featureimg.png'
+import featureimg from "../../assets/images/featureImg.png";
 import ProductShippingCard from '../products_info/product_shipping_card';
 import returnIcon from '../../assets/icons/customer_services.svg'
 import deliveryIcon from '../../assets/icons/delivery-fast.svg'
